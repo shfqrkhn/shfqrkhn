@@ -16,6 +16,7 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 - Keep active flagship links aligned with the portfolio and current repos.
 - Keep Sponsor link visible.
 - Do not list deleted/archived repos as active projects.
+- Do not advertise private planning drafts or future projects until the user explicitly approves public release.
 
 ## Current Public Order
 
@@ -32,4 +33,3 @@ git diff --check
 ```
 
 Also check all public links manually or with a link checker before pushing.
-
