@@ -6,6 +6,7 @@ Start here:
 
 - [Project portfolio](https://shfqrkhn.github.io/) - curated launchpad for active flagships and stable utilities.
 - [Sponsor this work](https://github.com/sponsors/shfqrkhn?o=esb) - support continued maintenance and new public tools.
+- [Maintainer handoff](./docs/AI_MAINTAINER_HANDOFF.md) - public-safe continuation notes for future AI maintainers.
 
 ## Active Flagships
 
