@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -12,11 +13,18 @@ const readme = read("README.md");
 const handoff = read("docs/AI_MAINTAINER_HANDOFF.md");
 const evidence = read("docs/EVIDENCE_RECEIPT.md");
 const license = read("LICENSE");
+const forbiddenTrackedPathPattern = /(^|\/)(node_modules|offline|linkedin-post-package|test-results|playwright-report|\.codex-remote-attachments)(\/|$)|^data\/(manual-overrides\.json|latest-simulation\.json|scoreboards)(\/|$)|(^|\/).*\.((env)|(pem)|(key)|(p12)|(pfx))$|(^|\/)(exports?|backups?|logs?|scratch)(\/|$)/i;
+const trackedFiles = execFileSync("git", ["ls-files"], { cwd: root, encoding: "utf8" })
+  .split(/\r?\n/)
+  .filter(Boolean)
+  .map((file) => file.replace(/\\/g, "/"));
+const forbiddenTrackedFiles = trackedFiles.filter((file) => forbiddenTrackedPathPattern.test(file));
 
 assert(pkg.name === "shfqrkhn-profile", "package name must identify the profile repo.");
 assert(pkg.private === true, "profile package must stay private.");
 assert(pkg.scripts?.test === "node tests/profile-static-regression.mjs", "npm test must run the profile static gate.");
 assert(pkg.scripts?.qa === "npm test", "npm run qa must run the full profile gate.");
+assert(forbiddenTrackedFiles.length === 0, `Forbidden tracked paths: ${forbiddenTrackedFiles.join(", ")}`);
 
 for (const phrase of [
   "Project portfolio",
