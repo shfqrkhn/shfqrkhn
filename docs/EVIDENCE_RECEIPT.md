@@ -22,6 +22,12 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 - If current evidence is stale, missing, inaccessible, or contradicted by profile/portfolio/repo/GitHub state, downgrade the affected claim to `NOT_RUN`, `BLOCKED`, or `NO_GO`.
 - Do not preserve old status snapshots as proof after profile positioning, public routing, repo status, sponsor links, or public profile wording changes.
 
+## Safe-To-Publish Receipt
+
+- Mark this repo safe to publish only when the current pass proves a clean synced tree, no GitHub Releases, no protected tracked paths, no open security/dependabot alerts, passing required gates, and concise public-safe profile wording.
+- If any proof is missing, stale, or contradicted by GitHub/repo/profile state, record the repo as `PASS_WITH_LIMITATIONS`, `NOT_RUN`, `BLOCKED`, or `NO_GO` instead of safe.
+- The final status table must name remaining risks rather than implying safety from silence.
+
 ## Claim Boundaries
 
 | Area | Class | Evidence | Limit |
