@@ -16,6 +16,7 @@ const license = read("LICENSE");
 assert(pkg.name === "shfqrkhn-profile", "package name must identify the profile repo.");
 assert(pkg.private === true, "profile package must stay private.");
 assert(pkg.scripts?.test === "node tests/profile-static-regression.mjs", "npm test must run the profile static gate.");
+assert(pkg.scripts?.qa === "npm test", "npm run qa must run the full profile gate.");
 
 for (const phrase of [
   "Project portfolio",

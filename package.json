@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/profile-static-regression.mjs"
+    "test": "node tests/profile-static-regression.mjs",
+    "qa": "npm test"
   }
 }
