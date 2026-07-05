@@ -1,6 +1,6 @@
 # AI Maintainer Handoff
 
-Last updated: 2026-07-03.
+Last updated: 2026-07-05.
 Repo: `D:\VSCode\GH\shfqrkhn`.
 
 Treat this as a public-safe continuation map. Re-read current files before editing.
@@ -22,7 +22,7 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 
 1. Portfolio.
 2. Sponsor link.
-3. Active flagships: ModelTab, FIFA-WC-Sim, nFIRE, LocalFirstApps.
+3. Active flagships: ModelTab, nFIRE, FIFA-WC-Sim, LocalFirstApps.
 4. Stable utilities through LocalFirstApps only.
 5. Project principles.
 
