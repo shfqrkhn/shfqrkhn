@@ -43,6 +43,7 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 ## Required Checks
 
 ```bash
+npm test
 git diff --check
 ```
 

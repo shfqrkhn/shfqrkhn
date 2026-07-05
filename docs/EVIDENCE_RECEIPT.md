@@ -46,6 +46,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 
 - `git status --short --ignored`
 - `git rev-list --left-right --count HEAD..."@{u}"`
+- `npm test`
 - `git diff --check`
 - protected-path scan
 - profile README review for public-safe claims
