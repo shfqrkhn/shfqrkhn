@@ -28,12 +28,18 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 - If any proof is missing, stale, or contradicted by GitHub/repo/profile state, record the repo as `PASS_WITH_LIMITATIONS`, `NOT_RUN`, `BLOCKED`, or `NO_GO` instead of safe.
 - The final status table must name remaining risks rather than implying safety from silence.
 
+## Profile Routing Evidence
+
+- The profile README is a front door, not the portfolio, release index, roadmap, or app archive.
+- Active flagship and utility links must stay aligned with the live portfolio and current public repos before profile wording claims they are active, stable, maintained, or runnable.
+- Stable utility apps belong under LocalFirstApps unless the current repo state and user approval prove a separate public surface should exist; private planning names and future-product ideas stay out.
+
 ## Claim Boundaries
 
 | Area | Class | Evidence | Limit |
 | --- | --- | --- | --- |
 | Concise public profile | `PASS_WITH_LIMITATIONS` | README and maintainer handoff | Keep profile scoped to current public work. |
-| Portfolio routing | `PASS_WITH_LIMITATIONS` | README link to portfolio | Portfolio repo owns detailed app routing. |
+| Portfolio routing | `PASS_WITH_LIMITATIONS` | README link to portfolio, profile routing evidence | Portfolio repo owns detailed app routing and current app ordering. |
 | Private planning exclusion | `PASS_WITH_LIMITATIONS` | maintainer handoff | Recheck no private docs, future-project names, PII, keys, exports, or backups are added. |
 
 ## Required Before Public-Facing Change
