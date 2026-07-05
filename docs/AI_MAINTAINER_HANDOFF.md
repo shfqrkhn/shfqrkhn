@@ -26,6 +26,12 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 - Operations truth: the profile README and current main repository ZIP are the only distribution surfaces; GitHub Releases stay absent.
 - Transfer truth: update this handoff and the evidence receipt when profile positioning, routing, or public-surface guarantees change.
 
+## Doctrine Delta Decision
+
+- After incidents, rescue runs, maturity passes, or repeated failures, classify reusable lessons as `promote`, `reject`, `quarantine`, or `keep_local`.
+- Promote only source-backed, reusable, non-secret lessons that strengthen a gate, checklist, source rule, or failure guard without weakening profile concision.
+- Keep private, project-specific, speculative, or unverified lessons out of public repos unless the user explicitly approves publication.
+
 ## Current Public Order
 
 1. Portfolio.
