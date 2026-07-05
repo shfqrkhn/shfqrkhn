@@ -46,6 +46,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 
 - `git status --short --ignored`
 - `git rev-list --left-right --count 'HEAD...@{u}'`
+- `gh release list --limit 5` returns no releases
 - `npm run qa`
 - `git diff --check`
 - protected-path scan
