@@ -72,7 +72,8 @@ for (const phrase of [
   "Profile Routing Evidence",
   "no GitHub Releases",
   "no protected tracked paths",
-  "no open security/dependabot alerts"
+  "no open secret/dependabot/code-scanning alerts",
+  "code-scanning not-applicable/no-analysis state"
 ]) {
   assert(evidence.includes(phrase), `Evidence receipt missing guardrail term: ${phrase}`);
 }

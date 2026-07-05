@@ -24,7 +24,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 
 ## Safe-To-Publish Receipt
 
-- Mark this repo safe to publish only when the current pass proves a clean synced tree, no GitHub Releases, no protected tracked paths, no open security/dependabot alerts, passing required gates, and concise public-safe profile wording.
+- Mark this repo safe to publish only when the current pass proves a clean synced tree, no GitHub Releases, no protected tracked paths, no open secret/dependabot/code-scanning alerts or a documented code-scanning not-applicable/no-analysis state, passing required gates, and concise public-safe profile wording.
 - If any proof is missing, stale, or contradicted by GitHub/repo/profile state, record the repo as `PASS_WITH_LIMITATIONS`, `NOT_RUN`, `BLOCKED`, or `NO_GO` instead of safe.
 - The final status table must name remaining risks rather than implying safety from silence.
 
