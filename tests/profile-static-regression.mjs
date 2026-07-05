@@ -77,6 +77,7 @@ for (const phrase of [
 ]) {
   assert(evidence.includes(phrase), `Evidence receipt missing guardrail term: ${phrase}`);
 }
+assert(evidence.includes("git rev-list --left-right --count 'HEAD...@{u}'"), "Evidence receipt must preserve the PowerShell-safe upstream delta command.");
 
 for (const phrase of [
   "OmniOS Transfer Contract",
