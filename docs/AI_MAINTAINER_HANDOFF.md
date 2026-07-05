@@ -18,6 +18,14 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 - Do not list deleted/archived repos as active projects.
 - Do not advertise private planning drafts or future projects until the user explicitly approves public release.
 
+## OmniOS Transfer Contract
+
+- Product truth: concise public profile README, not a portfolio replacement or private roadmap surface.
+- Execution truth: preserve concise wording, current public routing, sponsor/profile checks, and public-safe review before publishing.
+- Evidence truth: use `docs/EVIDENCE_RECEIPT.md`, README review, protected-path scans, and live portfolio checks; public claims must stay within `PASS` or `PASS_WITH_LIMITATIONS`.
+- Operations truth: the profile README and current main repository ZIP are the only distribution surfaces; GitHub Releases stay absent.
+- Transfer truth: update this handoff and the evidence receipt when profile positioning, routing, or public-surface guarantees change.
+
 ## Current Public Order
 
 1. Portfolio.
