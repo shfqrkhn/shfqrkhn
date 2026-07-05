@@ -40,7 +40,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 | --- | --- | --- | --- |
 | Concise public profile | `PASS_WITH_LIMITATIONS` | README and maintainer handoff | Keep profile scoped to current public work. |
 | Portfolio routing | `PASS_WITH_LIMITATIONS` | README link to portfolio, profile routing evidence | Portfolio repo owns detailed app routing and current app ordering. |
-| Private planning exclusion | `PASS_WITH_LIMITATIONS` | maintainer handoff | Recheck no private docs, future-project names, PII, keys, exports, or backups are added. |
+| Private planning exclusion | `PASS_WITH_LIMITATIONS` | maintainer handoff, `git archive` | Recheck no private docs, future-project names, PII, keys, exports, or backups are added. |
 
 ## Required Before Public-Facing Change
 
@@ -49,5 +49,6 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 - `gh release list --limit 5` returns no releases
 - `npm run qa`
 - `git diff --check`
+- `git archive --format=tar HEAD`
 - protected-path scan
 - profile README review for public-safe claims
