@@ -50,6 +50,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 ## Design Language Evidence
 
 - Public presentation must stay modern minimalist, utilitarian, professional, joyful, responsive, and concise with clear links, visible focus, no noisy decoration, and no component overlap.
+- Signature Ecosystem Evidence: the profile must look and feel like the concise front door to the shared `shfqrkhn` ecosystem while staying lighter than app or portfolio surfaces.
 - MIT UI libraries/resources are inspiration sources for app or portfolio repos only unless a source-backed, license-checked, tested need justifies a dependency.
 - Reject browser JS popups, blocking surfaces, arbitrary component copy-paste, mixed visual systems, unbounded animation, external CDNs, or styling that makes the profile less scannable.
 
@@ -63,6 +64,7 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 | Mission-critical reliability | `PASS_WITH_LIMITATIONS` | mission-critical reliability evidence, static tests, profile review | Profile can route to reliability evidence but does not certify app runtime behavior by itself. |
 | Single input operation | `PASS_WITH_LIMITATIONS` | single input directive evidence, README review, no browser popup policy | Does not certify every GitHub rendering surface, OS assistive technology, or unusual HID/browser pairing. |
 | Design language/UI safety | `PASS_WITH_LIMITATIONS` | handoff/evidence docs, static tests, manual profile review where run | Does not certify every GitHub rendering surface; profile should remain concise rather than app-like. |
+| Signature ecosystem fit | `PASS_WITH_LIMITATIONS` | shared signature design system reference, handoff/evidence docs, static tests | Does not require app-like visuals; the profile remains a concise public entrypoint. |
 
 ## Required Before Public-Facing Change
 

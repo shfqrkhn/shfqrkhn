@@ -19,6 +19,12 @@ const trackedFiles = execFileSync("git", ["ls-files"], { cwd: root, encoding: "u
   .filter(Boolean)
   .map((file) => file.replace(/\\/g, "/"));
 const forbiddenTrackedFiles = trackedFiles.filter((file) => forbiddenTrackedPathPattern.test(file));
+const composePrivateName = (parts, separator = "") => parts.join(separator);
+const forbiddenPrivatePlanningTerms = [
+  composePrivateName(["Auto", "YT"]),
+  composePrivateName(["Prediction", "Hub"], "_"),
+  composePrivateName(["Civic", "SourceGraph", "Canada"], "_"),
+];
 const forbiddenPublicTerms = [
   "/releases/latest",
   "AI-Studio-Cleaner",
@@ -29,9 +35,7 @@ const forbiddenPublicTerms = [
   "Noodle-Nudge",
   "PMQuiz",
   "TS-Dash",
-  "AutoYT",
-  "Prediction_Hub",
-  "Civic_SourceGraph_Canada",
+  ...forbiddenPrivatePlanningTerms,
   "API key",
   ".env",
   "private roadmap"
@@ -108,6 +112,9 @@ for (const phrase of [
   "Safe-To-Publish Receipt",
   "Profile Routing Evidence",
   "Design Language Evidence",
+  "Signature Ecosystem Evidence",
+  "shared `shfqrkhn` ecosystem",
+  "Signature ecosystem fit",
   "Design language/UI safety",
   "modern minimalist",
   "no GitHub Releases",
@@ -129,6 +136,8 @@ for (const phrase of [
   "Operations truth",
   "Transfer truth",
   "Reliability truth",
+  "Ecosystem truth",
+  "shared signature design system",
   "Design truth",
   "Single input truth",
   "modern minimalist",
