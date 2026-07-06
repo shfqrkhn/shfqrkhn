@@ -107,6 +107,9 @@ for (const phrase of [
   "Currentness Watchdog",
   "Safe-To-Publish Receipt",
   "Profile Routing Evidence",
+  "Design Language Evidence",
+  "Design language/UI safety",
+  "modern minimalist",
   "no GitHub Releases",
   "no protected tracked paths",
   "no open secret/dependabot/code-scanning alerts",
@@ -125,10 +128,39 @@ for (const phrase of [
   "Evidence truth",
   "Operations truth",
   "Transfer truth",
+  "Reliability truth",
+  "Design truth",
+  "Single input truth",
+  "modern minimalist",
+  "combined input-mode path",
   "Doctrine Delta Decision",
   "source-backed, reusable, non-secret"
 ]) {
   assert(handoff.includes(phrase), `Handoff missing transfer term: ${phrase}`);
+}
+
+for (const phrase of [
+  "Mission-Critical Reliability Evidence",
+  "self-checking",
+  "crash-recoverable",
+  "state-explicit",
+  "autonomous AI-assisted TDD/SDD",
+  "Remove or reject",
+  "Mission-critical reliability"
+]) {
+  assert(evidence.includes(phrase), `Evidence receipt missing mission-critical reliability term: ${phrase}`);
+}
+
+for (const phrase of [
+  "Single Input Directive Evidence",
+  "keyboard only",
+  "mouse/pointer only",
+  "touch only",
+  "platform-limited input only",
+  "No public surface may require",
+  "Single input operation"
+]) {
+  assert(evidence.includes(phrase), `Evidence receipt missing single input term: ${phrase}`);
 }
 
 assert(license.includes("MIT License"), "license must stay MIT.");

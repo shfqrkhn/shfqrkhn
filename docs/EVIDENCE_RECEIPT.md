@@ -34,6 +34,25 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 - Active flagship and utility links must stay aligned with the live portfolio and current public repos before profile wording claims they are active, stable, maintained, or runnable.
 - Stable utility apps belong under LocalFirstApps unless the current repo state and user approval prove a separate public surface should exist; private planning names and future-product ideas stay out.
 
+## Mission-Critical Reliability Evidence
+
+- Profile wording must route users to apps that remain self-checking, crash-recoverable, state-explicit, maintainable, simple, one-input accessible, and backed by autonomous AI-assisted TDD/SDD gates.
+- Public claims must not imply mission-critical guarantees unless the linked app repo has current evidence for recovery, state handling, accessibility, and test coverage.
+- Remove or reject profile content that adds complexity, stale status, or unsupported promises without improving resilience, usability, or public maintainability.
+
+## Single Input Directive Evidence
+
+- Public links, profile navigation, and any future interactive profile surfaces must stay operable with one available input mode: keyboard only, mouse/pointer only, touch only, or platform-limited input only.
+- No public surface may require a combined keyboard-plus-pointer, keyboard-plus-touch, hover-plus-keyboard, drag-plus-keyboard, or browser-popup path.
+- Links and controls must expose visible focus, click/tap alternatives, platform text-entry support where text is unavoidable, and nonblocking status or recovery guidance for degraded HID conditions.
+- If a public surface lacks direct input-mode coverage, label it `PASS_WITH_LIMITATIONS` or `NOT_RUN`.
+
+## Design Language Evidence
+
+- Public presentation must stay modern minimalist, utilitarian, professional, joyful, responsive, and concise with clear links, visible focus, no noisy decoration, and no component overlap.
+- MIT UI libraries/resources are inspiration sources for app or portfolio repos only unless a source-backed, license-checked, tested need justifies a dependency.
+- Reject browser JS popups, blocking surfaces, arbitrary component copy-paste, mixed visual systems, unbounded animation, external CDNs, or styling that makes the profile less scannable.
+
 ## Claim Boundaries
 
 | Area | Class | Evidence | Limit |
@@ -41,6 +60,9 @@ This public-safe receipt keeps profile claims tied to evidence instead of chat h
 | Concise public profile | `PASS_WITH_LIMITATIONS` | README and maintainer handoff | Keep profile scoped to current public work. |
 | Portfolio routing | `PASS_WITH_LIMITATIONS` | README link to portfolio, profile routing evidence | Portfolio repo owns detailed app routing and current app ordering. |
 | Private planning exclusion | `PASS_WITH_LIMITATIONS` | maintainer handoff, `git archive` | Recheck no private docs, future-project names, PII, keys, exports, or backups are added. |
+| Mission-critical reliability | `PASS_WITH_LIMITATIONS` | mission-critical reliability evidence, static tests, profile review | Profile can route to reliability evidence but does not certify app runtime behavior by itself. |
+| Single input operation | `PASS_WITH_LIMITATIONS` | single input directive evidence, README review, no browser popup policy | Does not certify every GitHub rendering surface, OS assistive technology, or unusual HID/browser pairing. |
+| Design language/UI safety | `PASS_WITH_LIMITATIONS` | handoff/evidence docs, static tests, manual profile review where run | Does not certify every GitHub rendering surface; profile should remain concise rather than app-like. |
 
 ## Required Before Public-Facing Change
 

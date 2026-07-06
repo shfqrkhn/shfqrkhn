@@ -24,6 +24,9 @@ Maintain the GitHub profile README as a concise public entrypoint for the active
 - Execution truth: preserve concise wording, current public routing, sponsor/profile checks, and public-safe review before publishing.
 - Evidence truth: use `docs/EVIDENCE_RECEIPT.md`, README review, protected-path scans, and live portfolio checks; public claims must stay within `PASS` or `PASS_WITH_LIMITATIONS`.
 - Operations truth: the profile README and current main repository ZIP are the only distribution surfaces; GitHub Releases stay absent.
+- Reliability truth: keep profile claims state-explicit, evidence-backed, simple, one-input accessible where interactive, and scoped to app repos that prove self-checking and recovery behavior through TDD/SDD gates.
+- Design truth: keep public presentation modern minimalist, utilitarian, professional, joyful, responsive, and concise; treat MIT UI/design resources as inspiration only for the portfolio or app repos, and reject browser JS popups, blocking surfaces, inaccessible links, noisy decoration, or arbitrary component copy-paste.
+- Single input truth: public profile links and future interactive profile surfaces must remain fully operable by keyboard only, mouse/pointer only, touch only, or platform-limited input only; never require a combined input-mode path.
 - Transfer truth: update this handoff and the evidence receipt when profile positioning, routing, or public-surface guarantees change.
 
 ## Doctrine Delta Decision
